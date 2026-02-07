@@ -1,0 +1,21 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: rgb(255, 251, 201);
+}
+
+.secao-cards-produtos {
+   display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap; 
+}
+
+header {
+   display: flex;
+   
+}
+
+
