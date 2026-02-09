@@ -10,3 +10,8 @@
 body {
   font-family: 'League Spartan', sans-serif;
 }
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
