@@ -33,7 +33,7 @@ import lupa from '@/assets/icons/lupa.png'
 
 
 <div id="direita">
-    <button> <a href="../entrar.html"></a> </button>
+    <button> <a href="../entrar.html">Entrar</a> </button>
 
     <nav>
     <ul class="icon">

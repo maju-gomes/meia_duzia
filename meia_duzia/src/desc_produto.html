@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+        body {
+            background-color:#fffac9;
+            font-family: 'League Spartan';
+            display: flex;
+            justify-content: center;
+
+            /* o alinhamento vertical funciona apenas em elementos
+            que possuem a altura definida */
+            align-items: center;
+            height: 100vh;
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 25px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            width: 800px;
+            height: 450px;
+        }
+
+        #info1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .preco {
+            background-color: #975c5c;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        #info2 p{
+            text-align: justify;
+            margin-right: 30px;
+        }
+
+        h3 {
+            margin-bottom: -10px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="container">
+
+        <div id="info1">
+            <h2>Brigadeiro</h2>
+            <figure><img src="assets/doces/brigadeiro.png" alt=""></figure>
+            <p class="preco">R$3,00</p>
+        </div>
+
+        <div id="info2">
+            <h3>Ingredientes</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+            <h3>Informações nutricionais</h3>
+            <p>Brigadeiro 20g: 90kcal, 12g carboidratos, 4g gordura, 1g proteína, Lorem ipsum chocolate e leite condensado.</p>
+        </div>
+        
+
+    </div>
+
+</body>
+</html>

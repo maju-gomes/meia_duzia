@@ -6,15 +6,56 @@
     <title>Document</title>
 
     <style>
-        input {
-            margin-bottom: 25px;
+        @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+        body {
+            background-color: #fffac9;
+            font-family: 'League Spartan';
+            display: flex;
+            justify-content: center;
+
+            /* o alinhamento vertical funciona apenas em elementos
+            que possuem a altura definida */
+            align-items: center;
+            height: 100vh;
+        }
+
+        input{
+            padding-inline: 5px;
+            display: flex;
+            justify-content: center;
+            width: 400px;
+            height: 25px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        input[type="submit"] {
+            border: none;
+            border-radius: 15px;
+            margin: 3rem auto;
+            height: 30px;
+            width: 60px;
+            margin-bottom: -2px;
+            background-color: #975c5c;
         }
 
         #container {
-            background-color: aquamarine;
-            width: 800px;
-            height: ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 25px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            width: 600px;
+            height: 350px;
         }
+
+        p {
+            font-size: small;
+            text-align: center;
+        }
+
     </style>
 
 </head>
@@ -22,13 +63,16 @@
     
 
     <div id="container">
-        <form action="">
+        <form action="" style="margin-top: 30px">
             <label for="email">E-mail:</label> <br>
-            <input type="text"> <br>
+            <input type="text" style="margin-bottom: 25px;"> <br>
 
             <label for="senha">Senha:</label> <br>
             <input type="password" id="senha">
 
+            <input type="submit">
+
+            <p>Não tem uma conta? <a href="">Cadastre-se</a></p>
         </form>
     </div>
 
