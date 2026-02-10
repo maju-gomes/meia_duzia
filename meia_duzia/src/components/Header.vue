@@ -17,14 +17,14 @@ import lupa from '@/assets/icons/lupa.png'
 
 <div id="esquerda">
 
-    <h1> <img :src="logo" alt="Logo"> </h1>
+    <h1> <img :src="logo" alt="Logo" width="65px" > </h1>
 
-    <form action="">
+    <form action="#">
         <div id="procurar_objeto">
-            <input type="text" placeholder="Procurar...">
+            <input type="text" placeholder="Procurar..." >
             
             <a href=""> 
-                <img :src="lupa" alt="Lupa">
+                <img class="lupa" :src="lupa" alt="Lupa" width="20px">
             </a>
         </div>
     </form>
@@ -33,41 +33,123 @@ import lupa from '@/assets/icons/lupa.png'
 
 
 <div id="direita">
-    <button id="entrar"> Entrar </button>
+    <button> Entrar </button>
 
     <nav>
-    <ul>
-        <li class="icon">
+    <ul class="icon">
+        <li>
             <a href="#">
-                <img :src="carrinho_de_compras" alt="Carrinho de Compras"/>
+                <img :src="carrinho_de_compras" alt="Carrinho de Compras" width="20px"/>
             </a>
         </li>
 
-        <li class="icon">
+        <li>
             <a href="#">
-                <img :src="favoritos" alt="Favoritos"/>
+                <img :src="favoritos" alt="Favoritos" width="20px"/>
             </a>
         </li>
     </ul>
     </nav>
 </div>
-
-
 </div>
 </header>
+
+<nav class="navDeBaixo">
+    <ol>
+        <li><a href="#">Bolos</a></li>
+        <li><a href="#">Brownies</a></li>
+        <li><a href="#">Docinhos</a></li>
+        <li><a href="#">Chocolates</a></li>
+        <li id="lancamento"><a href="#">Lançamentos</a></li>
+    </ol>
+</nav>
+
 </template>
 
 
 <!------------------------------ CSS ------------------------------>
 <style scoped>
 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan';
+}
+
 header{
     background-color: #d38787;
 }
 
 
-#entrar {
+/* ----------------------------- */
+.container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#esquerda {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#direita, .icon {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+/* ----------------------------- */
+
+
+button {
+    border: none;
+    padding: 8px 15px;
+    border-radius: 10px;
     background-color: #992525;
+    color: white;
+}
+
+#procurar_objeto input{
+    border: none;
+    width: 300px;
+    height: 28px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color:#d9d9d9;
+    position: absolute;
+    color:
+}
+
+.lupa {
+    position: relative;
+    margin-inline-start: 275px;
+    margin-top: 4.5px;
+}
+
+h1 {
+    padding-top: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* --------NAV DE BAIXO-------- */
+
+.navDeBaixo ol{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #992525;
+    padding: 10px;
+}
+
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
     color: white;
 }
 
