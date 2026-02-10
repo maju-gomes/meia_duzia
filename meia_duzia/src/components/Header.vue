@@ -33,7 +33,7 @@ import lupa from '@/assets/icons/lupa.png'
 
 
 <div id="direita">
-    <button> Entrar </button>
+    <button> <a href="../entrar.html"></a> </button>
 
     <nav>
     <ul class="icon">
@@ -55,13 +55,17 @@ import lupa from '@/assets/icons/lupa.png'
 </header>
 
 <nav class="navDeBaixo">
-    <ol>
-        <li><a href="#">Bolos</a></li>
-        <li><a href="#">Brownies</a></li>
-        <li><a href="#">Docinhos</a></li>
-        <li><a href="#">Chocolates</a></li>
-        <li id="lancamento"><a href="#">Lançamentos</a></li>
-    </ol>
+        <ol id="esquerdaDeBaixo">
+            <li><a href="#">Bolos</a></li>
+            <li><a href="#">Brownies</a></li>
+            <li><a href="#">Docinhos</a></li>
+            <li><a href="#">Chocolates</a></li> 
+        </ol>
+
+        <ol>
+            <li id="lancamento"><a href="#">Lançamentos</a></li>
+        </ol>
+        
 </nav>
 
 </template>
@@ -104,8 +108,8 @@ header{
 
 button {
     border: none;
-    padding: 8px 15px;
-    border-radius: 10px;
+    padding: 8px 14px;
+    border-radius: 7px;
     background-color: #992525;
     color: white;
 }
@@ -118,7 +122,7 @@ button {
     border-radius: 5px;
     background-color:#d9d9d9;
     position: absolute;
-    color:
+
 }
 
 .lupa {
@@ -137,15 +141,27 @@ ul {
 
 /* --------NAV DE BAIXO-------- */
 
-.navDeBaixo ol{
+.navDeBaixo{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     background-color: #992525;
     padding: 10px;
+    list-style-type: none;
+}
+
+#lancamento a {
+    text-align: right;
+    color: #87ff62;
 }
 
 ol {
     list-style-type: none;
+    display: flex;
+}
+
+#esquerdaDeBaixo li {
+    margin-left: 0;
+    margin-inline: 15px;
 }
 
 a {

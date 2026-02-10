@@ -17,14 +17,16 @@ import whatsapp from '@/assets/redes_sociais/whatsapp.png'
 
 <div id="meio">
     <p> Sugestões: <br> <a href="#"> ouvidoradoce.com.br </a> </p>
-    <p> Av. Senador Salgado Filho, 0 </p>
-    <p> Todos os direitos reservados </p>
+    <div>
+        <p id="p_meio"> Av. Senador Salgado Filho, 0 </p>
+        <p id="#p_inf" style="font-size: small; margin-top: 20px;"> Todos os direitos reservados. </p>
+    </div>
 </div>
 
 <div id="redes_sociais">
-    <a href="#"> <img :src="facebook" alt="Facebook" id="icon"> </a>
-    <a href="#"> <img :src="instagram" alt="Instagram" id="icon"> </a>
-    <a href="#"> <img :src="whatsapp" alt="WhatsApp" id="icon"> </a>
+    <a href="#"> <img :src="facebook" alt="Facebook" id="icon" width='30px'> </a>
+    <a href="#"> <img :src="instagram" alt="Instagram" id="icon" width='30px'> </a>
+    <a href="#"> <img :src="whatsapp" alt="WhatsApp" id="icon" width='30px'> </a>
 </div>
 
 </div>
@@ -35,21 +37,50 @@ import whatsapp from '@/assets/redes_sociais/whatsapp.png'
 <!------------------------------ CS ------------------------------>
 <style scoped>
 
+body {
+    font-family: 'League Spartan';
+}
+
 footer {
     background-color: #d38787;
+    padding: 30px;
 }
+
 footer .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 button {
     background-color: #992525;
-    color: #d9d9d9;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
 }
-footer {
-    color: #d9d9d9
+
+p {
+    text-align: center;
 }
+
+p a {
+    color: rgb(56, 79, 255);
+}
+
+#meio {
+    color: white;
+}
+
+#p_meio, #p_inf {
+    margin-top: 1rem;
+} 
+
+#redes_sociais {
+    display: flex;
+    gap: 20px;
+}
+
 
 </style>
