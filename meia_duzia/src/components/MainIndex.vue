@@ -45,14 +45,16 @@ const doces = [
 <div class="container">
 
 <ul>
-    <li class="doce_card" v-for="doce in doces" :key="doce.nome"> 
-        <a href="#"> 
-            <img :src="doce.img" :alt="doce.nome" width="125px"> 
-            <p>{{ doce.nome }}</p>
-            <button> Adicionar ao carrinho </button>
-        </a>    
-    </li>
+  <li class="doce_card" v-for="doce in doces" :key="doce.nome"> 
+    <router-link to="/desc_produto">
+      <img :src="doce.img" :alt="doce.nome" width="125px">
+      <p>{{ doce.nome }}</p>
+    </router-link>
+
+    <button>Adicionar ao carrinho</button>
+  </li>
 </ul>
+
 
 </div>
 </main>

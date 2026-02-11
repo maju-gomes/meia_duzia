@@ -33,7 +33,12 @@ import lupa from '@/assets/icons/lupa.png'
 
 
 <div id="direita">
-    <button> <a href="../entrar.html">Entrar</a> </button>
+    
+
+    <router-link to="/login">
+        <button>Entrar</button>
+    </router-link>
+
 
     <nav>
     <ul class="icon">
