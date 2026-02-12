@@ -13,7 +13,7 @@ import whatsapp from '@/assets/redes_sociais/whatsapp.png'
 <footer>
 <div class="container">
 
-<button> Sobre nós </button>
+<router-link id="botao_router" to="/sobre_nos">Sobre nós</router-link>
 
 <div id="meio">
     <p> Sugestões: <br> <a href="#"> ouvidoradoce.com.br </a> </p>
@@ -51,9 +51,11 @@ footer .container {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
-button {
+#botao_router {
+    display: flex;
     background-color: #992525;
     color: #ffffff;
     border: none;
@@ -81,6 +83,5 @@ p a {
     display: flex;
     gap: 20px;
 }
-
 
 </style>

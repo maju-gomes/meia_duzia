@@ -4,8 +4,6 @@
 import doces from '@/assets/docinhos.js'
 
 </script>
-
-
 <!------------------------------ HTML ------------------------------>
 <template>
 <main>
@@ -70,7 +68,7 @@ h2 {
 button {
     margin-top: 10px;
     border: none;
-    background-color: #975c5c;
+    background-color: #e2e218;
     border-radius: 15px;
     padding: 6px;
 }

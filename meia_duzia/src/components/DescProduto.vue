@@ -1,10 +1,10 @@
 <!--------------JS--------------->
 
-<script>
+<!-- <script>
 export default {
   name: 'DescProduto'
 }
-</script>
+</script> -->
 
 <!--------------HTML--------------->
 

@@ -17,7 +17,11 @@ import lupa from '@/assets/icons/lupa.png'
 
 <div id="esquerda">
 
-    <h1> <img :src="logo" alt="Logo" width="65px" > </h1>
+    <h1>
+        <router-link to="/">
+            <img :src="logo" alt="Logo" width="65px" >
+        </router-link> 
+    </h1>
 
     <form action="#">
         <div id="procurar_objeto">

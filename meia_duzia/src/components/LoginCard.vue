@@ -20,12 +20,6 @@
 </template>
 <!--------------JS-------------->
 
-<script>
-export default {
-  name: 'LoginCard'
-}
-</script>
-
 <style scoped>
 
 .container {
