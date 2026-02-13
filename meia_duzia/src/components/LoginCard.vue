@@ -1,5 +1,18 @@
+<!-------------- JS -------------->
+<script setup>
+
+import logo from '@/assets/logo.png'
+
+</script>
+
+<!--------------HTML-------------->
+
 <template>
   <div class="container">
+
+    <figure>
+      <img :src="logo" alt="Logo" width="65px" >
+    </figure> 
 
     <form>
       <label>E-mail:</label> <br>
@@ -18,11 +31,19 @@
 
   </div>
 </template>
-<!--------------JS-------------->
+
+<!--------------CSS-------------->
 
 <style scoped>
 
+figure {
+  margin:0;
+  display: flex;
+  justify-content: center;
+}
+
 .container {
+  flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +51,7 @@
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   width: 600px;
-  height: 350px;
+  height: 400px;
 }
 
 form {
