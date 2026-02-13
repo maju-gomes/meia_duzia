@@ -13,10 +13,12 @@ import whatsapp from '@/assets/redes_sociais/whatsapp.png'
 <footer>
 <div class="container">
 
-<router-link id="botao_router" to="/sobre_nos">Sobre nós</router-link>
+<router-link id="botao_router" to="/sobre_nos">
+    Sobre nós
+</router-link>
 
 <div id="meio">
-    <p> Sugestões: <br> <a href="#"> ouvidoradoce.com.br </a> </p>
+    <p> Sugestões: <br> <router-link to="/ouvidoria"> ouvidoriadoce.com.br </router-link> </p>
     <div>
         <p id="p_meio"> Av. Senador Salgado Filho, 0 </p>
         <p id="#p_inf" style="font-size: small; margin-top: 20px;"> Todos os direitos reservados. </p>

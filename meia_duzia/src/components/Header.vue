@@ -39,8 +39,8 @@ import lupa from '@/assets/icons/lupa.png'
 <div id="direita">
     
 
-    <router-link to="/login">
-        <button>Entrar</button>
+    <router-link to="/login" id="botao_router">
+        Entrar
     </router-link>
 
 
@@ -115,7 +115,7 @@ header{
 /* ----------------------------- */
 
 
-button {
+#botao_router {
     border: none;
     padding: 8px 14px;
     border-radius: 7px;
