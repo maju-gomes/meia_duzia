@@ -37,12 +37,7 @@ import lupa from '@/assets/icons/lupa.png'
 
 
 <div id="direita">
-    
-
-    <router-link to="/login" id="botao_router">
-        Entrar
-    </router-link>
-
+    <router-link to="/login" class="botao"> Entrar </router-link>
 
     <nav>
     <ul class="icon">
@@ -60,21 +55,21 @@ import lupa from '@/assets/icons/lupa.png'
     </ul>
     </nav>
 </div>
+
 </div>
 </header>
 
 <nav class="navDeBaixo">
-        <ol id="esquerdaDeBaixo">
-            <li><a href="#">Bolos</a></li>
-            <li><a href="#">Brownies</a></li>
-            <li><a href="#">Docinhos</a></li>
-            <li><a href="#">Chocolates</a></li> 
-        </ol>
+    <ol id="esquerdaDeBaixo">
+        <li><a href="#">Bolos</a></li>
+        <li><a href="#">Brownies</a></li>
+        <li><a href="#">Docinhos</a></li>
+        <li><a href="#">Chocolates</a></li> 
+    </ol>
 
-        <ol>
-            <li id="lancamento"><a href="#">Lançamentos</a></li>
-        </ol>
-        
+    <ol>
+        <li id="lancamento"><a href="#">Lançamentos</a></li>
+    </ol>
 </nav>
 
 </template>
@@ -83,16 +78,9 @@ import lupa from '@/assets/icons/lupa.png'
 <!------------------------------ CSS ------------------------------>
 <style scoped>
 
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'League Spartan';
-}
-
 header{
     background-color: #d38787;
 }
-
 
 /* ----------------------------- */
 .container {
@@ -113,15 +101,6 @@ header{
     gap: 20px
 }
 /* ----------------------------- */
-
-
-#botao_router {
-    border: none;
-    padding: 8px 14px;
-    border-radius: 7px;
-    background-color: #992525;
-    color: white;
-}
 
 #procurar_objeto input{
     border: none;

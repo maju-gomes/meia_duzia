@@ -14,7 +14,7 @@ class Doce {
   constructor(nome, img_src, url) {
     this.nome = nome
     this.img_src = img_src
-    this.url = "doces/" + url
+    this.url = '/' + url
   }
 }
 
@@ -31,5 +31,7 @@ const doces = [
   new Doce("Bolo de Aniversário", bolo_aniversario, "bolo-aniversario"),
   new Doce("Kit de Cookies", kit_cookies, "kit-cookies")
 ]
+
+
 
 export default doces

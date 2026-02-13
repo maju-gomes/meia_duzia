@@ -1,17 +1,12 @@
 <!------------------------------- JS ------------------------------->
-
 <script setup>
 
-import Header from '@/components/Header.vue'
-import IndexMain from '@/components/MainIndex.vue'
-import Footer from '@/components/Footer.vue'
+import LoginMainSection from '@/views/Login/LoginMainSection.vue'
 
 </script>
 
 <!------------------------------- HTML ------------------------------->
 
 <template>
-    <Header />
-    <IndexMain />
-    <Footer />
+    <LoginMainSection />
 </template>

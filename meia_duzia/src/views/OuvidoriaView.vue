@@ -13,9 +13,9 @@ import Footer from '@/components/Footer.vue'
 <template>
 <Header />
 <main>
+<div class="container">
 
-
-<form action="">
+    <form action="">
     <h2>Reporte seu problema</h2>
     <label for=""> Seu problema: </label> <br>
     <textarea name="" id=""> </textarea><br>
@@ -37,8 +37,9 @@ import Footer from '@/components/Footer.vue'
 
     <h3>Lorem ipsum dolor sit amet consectetur adipisi?</h3>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure quas, libero deleniti repellendus delectus molestias cumque laboriosam qui culpa debitis cupiditate consequuntur, maiores distinctio possimus? Aspernatur, inventore. Fugiat, libero exercitationem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ipsum quas similique maxime veniam assumenda magni ab? Voluptatum voluptatem provident suscipit eum, asperiores error? Qui omnis ab nobis enim veritatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolorum animi error mollitia, praesentium dignissimos ipsa modi iste enim itaque atque placeat aut magnam accusantium in corporis ducimus quos aspernatur.</p>
-
 </section>
+
+</div>
 </main>
 <Footer />
 </template>
@@ -46,18 +47,9 @@ import Footer from '@/components/Footer.vue'
 <!------------------------------ CSS ------------------------------>
 
 <style scoped>
-    url
-
     h2 {
         margin-bottom: 25px;
         text-align: center;
-    }
-
-    main {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 20px;
     }
 
     h3 {
