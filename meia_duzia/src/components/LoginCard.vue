@@ -48,13 +48,15 @@ form {
 }
 
 input[type="submit"]{
+  font-family: 'League Spartan';
   display: block;
   margin: 3rem auto 0;
   height: 30px;
   width: 60px;
   border: none;
-  border-radius: 15px;
-  background-color: #975c5c;
+  border-radius: 10px;
+  background-color: #992525;
+  color: white;
 }
 
 p {

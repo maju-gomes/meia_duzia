@@ -46,6 +46,7 @@ import Footer from '@/components/Footer.vue'
 <!------------------------------ CSS ------------------------------>
 
 <style scoped>
+    url
 
     h2 {
         margin-bottom: 25px;
@@ -82,7 +83,6 @@ import Footer from '@/components/Footer.vue'
     }
 
     input[type='submit'] {
-        background-color: #d38787;
         border: none;
         border-radius: 10px;
     }
